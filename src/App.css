@@ -802,3 +802,38 @@ body {
   .modal-overlay { padding: 0; align-items: flex-end; }
   .modal { border-radius: 14px 14px 0 0; max-height: 92vh; }
 }
+
+/* Progression field */
+.ex-card__progression {
+  margin-top: 8px;
+  padding: 6px 10px;
+  background: rgba(255,255,255,0.04);
+  border-left: 3px solid var(--phase-color, #00C9A7);
+  border-radius: 4px;
+  font-size: 11px;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+.ex-progression__label {
+  color: var(--phase-color, #00C9A7);
+  font-weight: 600;
+  white-space: nowrap;
+}
+.ex-progression__value { color: #aaa; }
+
+.modal__progression {
+  margin: 0 24px 16px;
+  padding: 10px 14px;
+  background: rgba(255,255,255,0.04);
+  border-left: 3px solid;
+  border-radius: 6px;
+  font-size: 13px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+.modal__progression-label { color: inherit; font-weight: 600; opacity: 0.85; white-space: nowrap; }
+.modal__progression-value { color: #bbb; }

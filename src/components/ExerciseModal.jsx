@@ -82,6 +82,14 @@ export default function ExerciseModal({ exercise, onClose }) {
           </ol>
         </div>
 
+        {/* Progression */}
+        {exercise.progression && (
+          <div className="modal__progression" style={{ borderColor: phaseColor }}>
+            <span className="modal__progression-label">Progression →</span>
+            <span className="modal__progression-value">{exercise.progression}</span>
+          </div>
+        )}
+
         {/* Key tip */}
         <div className="modal__tip" style={{ borderColor: phaseColor }}>
           {exercise.tip}

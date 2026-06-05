@@ -75,6 +75,13 @@ export default function ExerciseCard({ exercise, index, dayColor, selected, onTo
             </div>
           </div>
 
+          {exercise.progression && (
+            <div className="ex-card__progression">
+              <span className="ex-progression__label">Progression →</span>
+              <span className="ex-progression__value">{exercise.progression}</span>
+            </div>
+          )}
+
           <div className="ex-card__actions">
             <button
               className="ex-card__guide-btn"
